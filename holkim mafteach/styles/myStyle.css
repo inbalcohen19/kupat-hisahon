@@ -1,0 +1,466 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /*הגדרת פונט*/
+
+body {
+    width: 1280px;
+    direction: rtl;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+/*הגדרת גודל עמוד, פונט, גודל פונט וגבולות*/
+
+#back {
+    background-image: url('../imeg/BACKNEW.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*הגדרת תמונת רקע, וההגדרות שלה-אין חזרתיות וגודל הרקע כגודל הדף */
+
+.navigation {
+    height: 100px;
+    background: #FFDE55;
+}
+/*רקע צהוב לתפריט*/
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*הגדרת גודל, מיקום ויישור של התפריט עם מרווח לפני אחרי ובין השורות*/
+
+.brand {
+    position: relative;
+    left: 900px;
+}
+    /* מיקום לוגו*/
+
+    .brand a img {
+        height: 96px;
+        width: 96px;
+    }
+/*גודל לוגו*/
+
+nav ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+    /*הגדרה לתפריט הראשי*/
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #000000;
+        text-decoration: none;
+    }
+        /*הגדרה לתפריט משני*/
+
+        nav ul li a:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+            /*הגדרת צבע למעבר עכבר*/
+
+            nav ul li a:hover + .nav-dropdown {
+                display: flex;
+            }
+/*הגדרת פתיחת תפריט כלפי מטה לקישור סטטוס*/
+
+.nav-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+    background: #FFDE55;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+    /*הגדרות מיקום, עיצוב, צבע והסתרה לתפריט המשני*/
+
+    .nav-dropdown:hover {
+        display: flex;
+    }
+    /*הגדרת תפריט כגמיש בעת מעבר עכבר - קיבוע מיקום התפריט המשני*/
+
+    .nav-dropdown li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+    /*יישור כיתוב תפריט משני*/
+
+    .nav-dropdown .nav-dropdown-row {
+        flex-direction: row;
+    }
+        /*הגדרת כיוון לתפריט משני - פריט גמיש כשורה*/
+
+        .nav-dropdown .nav-dropdown-row li {
+            height: 100%;
+        }
+    /*הגדרת גובה תא בשורה תפריט רמה שלישית*/
+
+    .nav-dropdown .nav-dropdown-col {
+        flex-direction: column;
+    }
+        /*הגדרת כיוון לתפריט רמה שלישית - פריט גמיש כטור*/
+
+        .nav-dropdown .nav-dropdown-col li {
+            width: 100%;
+        }
+/*הגדרת גובה תא בשורה תפריט רמה שלישית*/
+
+#ngishot {
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    position: relative;
+    right: 1210px;
+}
+/*הגדרה לכפתור נגישות, גודל הפונט, רקע הכפתור, צבע הטקסט, מסגרת ומיקום בדף*/
+
+#ngishot:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*הגדרה לצל במעבר עכבר על כפתור נגישות*/
+
+article {
+    position: relative;
+    right: 50px;
+}
+/*הגדרה למיקום תוכן הדף כולל כותרת*/
+
+#pirori {
+    position: absolute;
+    top: -50px;
+}
+    /*תפריט פירורי לחם*/
+
+    #pirori > a {
+        text-decoration: none;
+        color:black;
+    }
+        /*ביטול קו תחתון לקישור ושינוי צבע טקסט*/
+
+
+h1 {
+    font-size: 30px;
+}
+/*הגדרת גודל הפונט לכותרת*/
+
+#tochan {
+    position: relative;
+    top: 190px;
+    width: 800px;
+    line-height: 25px;
+}
+/*הגדרה לפסקת תוכן-מיקום, רוחב וגודל הפונט*/
+
+.goodtoknow {
+    position: relative;
+    right: 940px;
+    width: 130px;
+    bottom: 220px;
+    font-size: 14px;
+}
+/*הגדרה לטקסט הידעת-מיקום, גודל הפונט, רוחב*/
+
+#img {
+    position: relative;
+    right: 880px;
+    bottom: 140px;
+}
+/*הגדרה למיקום תמונת אווירה של הזוג*/
+
+#img2 {
+    position: relative;
+    bottom: 110px;
+    right: 420px;
+    width: 620px;
+    height: 120px;
+}
+/*הגדרה למיקום וגודל המברשת מאחורי הידעת*/
+
+#icon1 {
+    display: inline-block;
+    position: absolute;
+    bottom: 130px;
+    text-decoration:none;
+    color:black;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+#icon2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 130px;
+    right: 200px;
+    cursor:not-allowed;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+#icon3 {
+    display: inline-block;
+    position: absolute;
+    bottom: 120px;
+    right: 400px;
+    cursor: not-allowed;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+
+#icon4 {
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    cursor: not-allowed;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+#icon5 {
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+    cursor: not-allowed;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+#icon6 {
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    right: 400px;
+    text-decoration:none;
+    color:black;
+}
+/*הגדרה שניתן למקם דברים נוספים בשורה, מיקום האייקון והטקסט, עיצוב הטקסט- צבע וביטול עיצוב הקישור*/
+
+a > span {
+    display: block;
+    position: relative;
+    right: 15px;
+    bottom: 53px;
+}
+/*הגדרת מיקום לשם של האייקון*/
+
+a > b {
+    position: relative;
+    bottom: 72px;
+    right: 42px;
+}
+/*הגדרת מיקום ל'לחץ כאן' שמופיע מתחת לכל אייקון*/
+
+aside > .koteret {
+    font-size: 24px;
+}
+/*עיצוב טקסט לכותרת הסבר על האייקונים*/
+
+#icon2 > b {
+    position: relative;
+    bottom: 70px;
+    right: 40px;
+}
+/*הגדרת מיקום ל'לחץ כאן' באופן ספציפי לאייקון 2- דרש חידוד נוסף למיקום*/
+
+#icon3 > b {
+    position: relative;
+    bottom: 73px;
+    right: 45px;
+}
+/*הגדרת מיקום ל'לחץ כאן' באופן ספציפי לאייקון 3- דרש חידוד נוסף למיקום*/
+
+#icontxt1 {
+    position: relative;
+    bottom: 48px;
+}
+/*יישור לשם של אייקון 2 רוצה מול צריך*/
+
+#icontxt2 {
+    position: relative;
+    bottom: 53px;
+    right: 10px;
+}
+/*יישור לשם של אייקון 4 עושים את זה נכון*/
+
+
+#icon_brush {
+    position: relative;
+    bottom: 180px;
+    left: 50px;
+    width: 420px;
+    height: 280px;
+    float: left;
+}
+/*תמונת רקע למידע של האייקונים- מיקום, גודל, והצפת התמונה לשמאל */
+
+#moveOn {
+    font-size: 24px;
+    position: relative;
+    right: 895px;
+    bottom: 170px;
+}
+/*הגדרה לגודל הפונט עברו על האייקון ומיקום הטקסט*/
+
+a > aside {
+    position: absolute;
+    top: 115px;
+    right: 900px;
+    width: 220px;
+    display: none;
+}
+/*הגדרה להסבר על האייקונים- מיקום והסתרה שלהם*/
+
+#icon1:hover #loKamzan {
+    display: block;
+    top: 125px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+#icon2:hover #roze {
+    display: block;
+    right: 695px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+#icon3:hover #bizbozim {
+    display: block;
+    right: 495px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+#icon4:hover #oshim {
+    display: block;
+    right: 900px;
+    top: -60px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+#icon5:hover #nayeret {
+    display: block;
+    right: 700px;
+    top: -60px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+#icon6:hover #shekellavan {
+    display: block;
+    right: 495px;
+    top: -60px;
+}
+/*הגדרה להסבר על האייקונים- ביטול ההסתרה ומיקום*/
+
+footer {
+    position: relative;
+    bottom: 50px;
+}
+/*הגדרה למיקום של הפוטר*/
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../imeg/newfooter@2x-8.png');
+    position: absolute;
+    top: 100px;
+    width: 1280px;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*הגדרה לתמונה של הפוטר, גודל, מיקום, ביטול החזרה על המונה.*/
+
+.not-allowed:hover {
+    cursor: not-allowed
+}
+
+/*שינוי סימן העכבר לאין גישה במעבר עכבר*/
+
+.firstrow {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*הגדרה לשורה הראשונה בפוטר-גודל הפונט והעיצוב*/
+
+#mcirim {
+    position: absolute;
+}
+/*הגדרה למיקום הרשימה בפוטר*/
+
+    #mcirim > li {
+        position: relative;
+        bottom: -235px;
+        right: 230px;
+        list-style: none;
+        line-height: 25px;
+    }
+    /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+        #mcirim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+        /*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
+
+#holkim {
+    position: absolute;
+}
+    /*הגדרה למיקום הרשימה בפוטר*/
+
+
+    #holkim > li {
+        position: relative;
+        bottom: -235px;
+        right: 450px;
+        list-style: none;
+        line-height: 25px
+    }
+        /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+        #holkim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
+
+
+#tkoim > li {
+    position: relative;
+    bottom: -250px;
+    right: 690px;
+    list-style: none;
+    line-height: 25px
+}
+    /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+    #tkoim > li > a {
+        text-decoration: none;
+        color: black;
+    }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
+
+#aboutus > li {
+    position: relative;
+    right: 920px;
+    bottom: -60px;
+    list-style: none;
+    line-height: 25px
+}
+    /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+    #aboutus > li > a {
+        text-decoration: none;
+        color: black;
+    }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/

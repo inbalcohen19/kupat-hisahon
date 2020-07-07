@@ -1,0 +1,362 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /*הגדרת פונט*/
+
+body {
+    width: 1280px;
+    direction: rtl;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+}
+/*הגדרת גודל עמוד, פונט, גודל פונט, גבולות*/
+
+#back {
+    background-image: url('../imeg/short.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1200px;
+}
+/*הגדרת תמונת רקע*/
+
+
+.navigation {
+    height: 100px;
+    background: #FFDE55;
+}
+/*רקע צהוב לתפריט*/
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*הגדרת גודל, מיקום ויישור של התפריט עם מרווח לפני אחרי ובין השורות*/
+
+.brand {
+    position: relative;
+    left: 900px;
+}
+    /* מיקום לוגו*/
+
+    .brand a img {
+        height: 96px;
+        width: 96px;
+    }
+/*גודל לוגו*/
+
+nav ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+    /*הגדרה לתפריט הראשי*/
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #000000;
+        text-decoration: none;
+    }
+        /*הגדרה לתפריט משני*/
+
+        nav ul li a:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+            /*הגדרת צבע למעבר עכבר*/
+
+            nav ul li a:hover + .nav-dropdown {
+                display: flex;
+            }
+/*הגדרת פתיחת תפריט כלפי מטה לקישור סטטוס*/
+
+.nav-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+    background: #FFDE55;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+    /*הגדרות מיקום, עיצוב, צבע והסתרה לתפריט המשני*/
+
+    .nav-dropdown:hover {
+        display: flex;
+    }
+    /*הגדרת תפריט כגמיש בעת מעבר עכבר - קיבוע מיקום התפריט המשני*/
+
+    .nav-dropdown li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+    /*יישור כיתוב תפריט משני*/
+
+    .nav-dropdown .nav-dropdown-row {
+        flex-direction: row;
+    }
+        /*הגדרת כיוון לתפריט משני - פריט גמיש כשורה*/
+
+        .nav-dropdown .nav-dropdown-row li {
+            height: 100%;
+        }
+    /*הגדרת גובה תא בשורה תפריט רמה שלישית*/
+
+    .nav-dropdown .nav-dropdown-col {
+        flex-direction: column;
+    }
+        /*הגדרת כיוון לתפריט רמה שלישית - פריט גמיש כטור*/
+
+        .nav-dropdown .nav-dropdown-col li {
+            width: 100%;
+        }
+/*הגדרת גובה תא בשורה תפריט רמה שלישית*/
+
+#ngishot {
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    position: relative;
+    right: 1210px;
+}
+    /*הגדרה לכפתור נגישות, גודל הפונט, רקע הכפתור, צבע הטקסט, מסגרת ומיקום בדף*/
+
+    #ngishot:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+/*הגדרה לצל במעבר עכבר על כפתור נגישות*/
+
+#pirori {
+    margin-top: -40px;
+}
+
+    #pirori > a {
+        text-decoration: none;
+        color: black;
+    }
+/*ביטול קו תחתון לקישור ושינוי צבע טקסט*/
+/*תפריט פירורי לחם*/
+article {
+    position: relative;
+    right: 50px;
+}
+/*הגדרה למיקום תוכן הדף כולל כותרת*/
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 170px;
+}
+/*הגדרת גודל כותרת עמוד*/
+
+#section1 {
+    margin-top: -80px;
+    margin-right: -10px
+}
+/*הגדרת מיקום לפי גבולות לפסקה הראשונה*/
+
+#koteret1 {
+    position: absolute;
+    font-size: 22px;
+    top: 230px
+}
+/*הגדרת גודל ומיקום כותרת פיסקה ראשונה*/
+
+#section2 {
+    margin-top: -130px;
+    margin-right: -10px;
+}
+/*הגדרת מיקום לפי גבולות לפסקה השנייה*/
+
+#koteret2 {
+    position: absolute;
+    font-size: 22px;
+    top: 390px
+}
+/*הגדרת גודל ומיקום כותרת פיסקה שנייה*/
+
+#section3 {
+    margin-top: -140px;
+    margin-right: -10px;
+}
+/*הגדרת מיקום לפי גבולות לפסקה השלישית*/
+
+#koteret3 {
+    position: absolute;
+    font-size: 22px;
+    top: 543px
+}
+/*הגדרת גודל ומיקום כותרת פיסקה שלישית*/
+
+article > section {
+    margin: 20px 20px;
+    padding: 10px;
+}
+/*יישור מימין לפסקאות הטקסט לכל section
+    שהוא בן ישיר של article*/
+
+#brush1 {
+    background-image: url('../imeg/yellow_brush_1.svg');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 160px;
+    position: relative;
+    top: 43px;
+    left: 15px;
+}
+/*מיקום וגודל למברשת רקע לכותרת פיסקה ראשונה*/
+
+#brush2 {
+    background-image: url('../imeg/yellow_brush_1.svg');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 160px;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+/*מיקום וגודל למברשת רקע לכותרת פיסקה שנייה*/
+
+#brush3 {
+    background-image: url('../imeg/yellow_brush_1.svg');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 160px;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+/*מיקום וגודל למברשת רקע לכותרת פיסקה שלישית*/
+
+#keepread {
+    color: blue;
+}
+/*הגדרת צבע כחול לקישור*/
+
+section > img {
+    position: absolute;
+    bottom: 110px;
+    right: 800px;
+}
+/*מיקום תמונת רקע*/
+
+footer {
+    position: relative;
+    bottom: 70px;
+}
+/*הגדרה למיקום של הפוטר*/
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../imeg/footer.png');
+    position: absolute;
+    top: 30px;
+    width: 1280px;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*הגדרה לתמונה של הפוטר, גודל, מיקום, ביטול החזרה על המונה.*/
+
+.not-allowed:hover {
+    cursor: not-allowed
+}
+/*שינוי סימן העכבר לאין גישה במעבר עכבר*/
+
+.firstrow {
+    font-size: 16px;
+    font-weight: bold;
+}
+/*הגדרה לשורה הראשונה בפוטר-גודל הפונט והעיצוב*/
+
+#mcirim {
+    position: absolute;
+}
+    /*הגדרה למיקום הרשימה בפוטר*/
+
+    #mcirim > li {
+        position: relative;
+        bottom: -220px;
+        right: 230px;
+        list-style: none;
+        line-height: 25px;
+        top: 150px;
+    }
+        /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+        #mcirim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
+
+#holkim {
+    position: absolute;
+}
+    /*הגדרה למיקום הרשימה בפוטר*/
+
+    #holkim > li {
+        position: relative;
+        bottom: -220px;
+        right: 450px;
+        list-style: none;
+        line-height: 25px;
+        top: 150px;
+    }
+        /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+        #holkim > li > a {
+            text-decoration: none;
+            color: black;
+        }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
+
+
+#tkoim > li {
+    position: relative;
+    bottom: -230px;
+    right: 690px;
+    list-style: none;
+    line-height: 25px;
+    top: 165px;
+}
+    /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+    #tkoim > li > a {
+        text-decoration: none;
+        color: black;
+    }
+/*עיצוב הטקסט בקישורים - ללא עיצוב ובצבע שחור*/
+
+#aboutus > li {
+    position: relative;
+    right: 920px;
+    bottom: -40px;
+    list-style: none;
+    line-height: 25px;
+    top: -30px;
+}
+    /*הגדרה למיקום הפריטים ברשימה, הורדת העיצוב שלהם, הגדרת מרווח בין השורות*/
+
+    #aboutus > li > a {
+        text-decoration: none;
+        color: black;
+    }
+/*עיצוב הטקסט בקישורים- ללא עיצוב ובצבע שחור*/
